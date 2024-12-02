@@ -1,8 +1,7 @@
-package com.mucko.day1;
+package com.mucko.day2;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,7 +10,7 @@ class RedNosedReportsTest {
 
     @Test
     void checkReports() {
-        String filePath = "day1/test.txt";
+        String filePath = "day2/test.txt";
         List<String> expectedResults = Arrays.asList("Safe", "Unsafe", "Unsafe", "Unsafe", "Unsafe", "Safe");
         RedNosedReports reports = new RedNosedReports();
         List<String> results = reports.checkReports(filePath);
@@ -21,7 +20,7 @@ class RedNosedReportsTest {
 
     @Test
     void checkReportsWithRemoval() {
-        String filePath = "day1/test.txt";
+        String filePath = "day2/test.txt";
         List<String> expectedResults = Arrays.asList("Safe", "Unsafe", "Unsafe", "Safe", "Safe", "Safe");
         RedNosedReports reports = new RedNosedReports();
         List<String> results = reports.checkReportsWithRemoval(filePath);

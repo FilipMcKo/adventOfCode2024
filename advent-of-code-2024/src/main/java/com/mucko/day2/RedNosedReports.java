@@ -1,4 +1,4 @@
-package com.mucko.day1;
+package com.mucko.day2;
 
 import com.mucko.Utils;
 
