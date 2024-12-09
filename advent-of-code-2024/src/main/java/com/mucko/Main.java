@@ -1,14 +1,10 @@
 package com.mucko;
 
-import com.mucko.day2.RedNosedReports;
-import com.mucko.day3.MullItOver;
-import com.mucko.day4.CeresSearch;
-import com.mucko.day5.PrintQueue;
+import com.mucko.day6.GuardGallivant;
 
 public class Main {
     public static void main(String[] args) {
-        PrintQueue queue = new PrintQueue();
-        //System.out.println(queue.sumQueue("day5/input.txt"));
-        System.out.println(queue.sumFixQueue("day5/input.txt"));
+        GuardGallivant guard = new GuardGallivant();
+        System.out.println(guard.countPossibleObstaclse("day6/input.txt"));
     }
 }
