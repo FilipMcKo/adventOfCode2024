@@ -28,10 +28,10 @@ public class GuardGallivant {
         int count = 0;
         for (int i = 0; i < lines.size(); i++) {
             for (int j = 0; j < lines.get(0).length(); j++) {
-                List<String> newLines = new ArrayList<String>(lines);
+                List<String> newLines = new ArrayList<>(lines);
                 StringBuilder sb= new StringBuilder(newLines.get(i));
                 sb.setCharAt(j, '#');
-                newLines.set(j, sb.toString());
+                newLines.set(i, sb.toString());
                 if(checkIfIsInfiniteLoops(newLines)) {
                     count++;
                 }
@@ -43,6 +43,8 @@ public class GuardGallivant {
     }
 
     private boolean checkIfIsInfiniteLoops(List<String> lines) {
+        dirX= 0;
+        dirY= -1;
         int guardPostionX = 0;
         int guardPostionY = 0;
         int rows = lines.size();
@@ -70,7 +72,7 @@ public class GuardGallivant {
                 guardPostionX += dirY;
                 guardPostionY += dirX;
             }
-            if(System.currentTimeMillis() - l > 600) {
+            if(System.currentTimeMillis() - l > 500) {
                 return true;
             }
         }

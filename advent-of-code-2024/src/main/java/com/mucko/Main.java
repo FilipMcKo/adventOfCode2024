@@ -1,11 +1,10 @@
 package com.mucko;
 
-import com.mucko.day1.HistorianHysteria;
-import com.mucko.day6.GuardGallivant;
+import com.mucko.day9.DiskFragmenter;
 
 public class Main {
     public static void main(String[] args) {
-        HistorianHysteria hysteria = new HistorianHysteria();
-        System.out.println(hysteria.checkSimilarityScore("day1/input.txt"));
+        DiskFragmenter fragmenter = new DiskFragmenter();
+        System.out.println(fragmenter.calculateCheckSum3("day9/input.txt"));
     }
 }
