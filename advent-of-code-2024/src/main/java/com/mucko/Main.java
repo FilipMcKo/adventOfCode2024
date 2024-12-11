@@ -1,11 +1,10 @@
 package com.mucko;
 
-import com.mucko.day10.HoofIt;
-import com.mucko.day9.DiskFragmenter;
+import com.mucko.day11.PlutonianPebbles;
 
 public class Main {
     public static void main(String[] args) {
-        HoofIt hoofIt = new HoofIt();
-        System.out.println(hoofIt.gradeTrails("day10/input.txt"));
+        PlutonianPebbles pebbles = new PlutonianPebbles();
+        System.out.println(pebbles.countStones("day11/input.txt"));
     }
 }

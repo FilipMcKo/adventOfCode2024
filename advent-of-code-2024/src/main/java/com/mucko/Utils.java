@@ -49,4 +49,7 @@ public class Utils {
         }
         return matrix;
     }
+
+    public static void writeToFile(String string, String s) {
+    }
 }
