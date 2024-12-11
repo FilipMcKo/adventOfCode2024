@@ -13,12 +13,12 @@ public class CeresSearch {
     private final String SAM = "SAM";
 
     public Integer searchForXmas(String path) {
-        char[][] matrix = readInMatrix(path);
+        char[][] matrix = Utils.readInMatrix(path);
         return countXmas(matrix);
     }
 
     public Integer searchForXmas2(String path) {
-        char[][] matrix = readInMatrix(path);
+        char[][] matrix = Utils.readInMatrix(path);
         return countMas(matrix);
     }
 
@@ -142,19 +142,6 @@ public class CeresSearch {
             count += StringUtils.countMatches(line, SAMX);
         }
         return count;
-    }
-
-    private char[][] readInMatrix(String path) {
-        List<String> lines = Utils.readInputData(path);
-        int rows = lines.size();
-        int cols = lines.get(0).length();
-        char[][] matrix = new char[rows][cols];
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                matrix[i][j] = lines.get(i).charAt(j);
-            }
-        }
-        return matrix;
     }
 
 }
